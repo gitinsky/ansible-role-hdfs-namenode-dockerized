@@ -1,7 +1,5 @@
 #!/bin/sh
 set -e
-JAVA_HOME=/jdk1.8.0_40/
-export JAVA_HOME
 chown -R hadoop:hadoop /var/hadoop
 if [ ! -e /var/hadoop/dfs ]; then
    sudo -E -u hadoop /hadoop/bin/hdfs namenode -format
